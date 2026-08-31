@@ -1,144 +1,372 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Sherlyn Wu</title>
     <link rel="icon" type="image/x-icon" href="resources/img/me.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/styletemp.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 </head>
 
 <body>
+    <div class="space-grid-overlay"></div>
+
     <!-- header -->
-    <div id="header" class="fixed-top">
-        <div class="header_container">
-            <div id="header_left">
-                <img src="resources/img/me.png" alt="logo" class="logo-img" />
-                <a href="index.html" class="brand-link">Sherlyn Wu</a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="portfolio/portfolio.html" class="nav-link">Portfolio</a></li>
-            </ul>
+    <div class="eve-top-system-bar">
+        <div class="sys-info">
+            <span class="security-status">0.9</span>
+            <span class="system-name">Troy</span>
+            <span class="constellation-region">&lt; New York &lt; United States of America</span>
+        </div>
+        <div class="corp-ticker">Rensselaer Polytechnic Institute [RPI]</div>
+    </div>
+
+    <!-- neocom -->
+    <div id="neocom-sidebar">
+        <div class="neocom-top">
+            <a href="index.html" class="neocom-icon-wrapper brand-wrapper" title="Pilot Home">
+                <img src="resources/img/me.png" alt="logo" class="neocom-avatar" />
+            </a>
+            <div class="neocom-divider"></div>
+            <a href="#about" class="neocom-btn" title="About">
+                <span class="btn-indicator"></span>
+                <span class="btn-label">ABT</span>
+            </a>
+            <a href="#skills" class="neocom-btn" title="Skills">
+                <span class="btn-indicator"></span>
+                <span class="btn-label">SKL</span>
+            </a>
+            <a href="#education" class="neocom-btn" title="Education">
+                <span class="btn-indicator"></span>
+                <span class="btn-label">EDU</span>
+            </a>
+            <a href="#experience" class="neocom-btn" title="Experience">
+                <span class="btn-indicator"></span>
+                <span class="btn-label">EXP</span>
+            </a>
+            <a href="portfolio/portfolio.html" class="neocom-btn" title="Projects">
+                <span class="btn-indicator"></span>
+                <span class="btn-label">PRJ</span>
+            </a>
+        </div>
+        <div class="neocom-bottom">
+            <div class="clock-display">10:14</div>
         </div>
     </div>
 
-    <!-- main content -->
-    <div class="main_content">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 mb-5 mx-auto">
-                    <div id="about" class="content_box">
-                        <h1>About</h1>
-                        <img src="resources/img/sherlyn.png" alt="portrait" class="portrait-img" />
-                        <p class="lead mt-3">
-                            Computer Science and IT & Web Science undergraduate at <strong>Rensselaer Polytechnic Institute</strong>
-                        </p>
+    <div class="eve-universe-container">
+        <div class="container-fluid h-100 position-relative">
+            <div class="main_content">
+                <div class="row g-4">
+
+                    <div class="col-12 col-xl-4 position-relative">
+                        <div id="about" class="eve-window-pane">
+                            <div class="pane-header">
+                                <span class="pane-title">// ABOUT</span>
+                            </div>
+                            <div class="pane-body text-start">
+                                <div class="d-flex gap-3 align-items-start mb-3">
+                                    <img src="resources/img/sherlyn.jpg" alt="portrait" class="portrait" />
+                                    <div class="pilot-identity-meta">
+                                        <h2 class="pilot-name text-white m-0">Sherlyn Wu</h2>
+                                        <p class="pilot-title-sub text-muted font-monospace m-0">Majors: CSCI, ITWS</p>
+                                        <p class="pilot-corp text-info font-monospace m-0">Rensselaer Polytechnic Institute</p>
+                                    </div>
+                                </div>
+                                <div class="terminal-bio-block">
+                                    <p class="lead font-monospace text-muted-blue">
+                                        I'm a Computer Science and IT & Web Science undergraduate at Rensselaer Polytechnic Institute. I am an EMT and volunteer with RPI Ambulance. I enjoy creative writing, painting, running, working out, aviation, and playing video games :)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="local-chat-pane" class="eve-window-pane mt-4">
+                            <div class="pane-header">
+                                <span class="pane-title">// COMMUNICATIONS</span>
+                            </div>
+                            <div class="pane-body text-start font-monospace chat-box-layout">
+                                <div class="chat-row"> <span class="chat-handle text-success">Email:</span> <span class="chat-msg">riverripplestudios@gmail.com</span></div>
+                                <div class="chat-row"> <span class="chat-handle text-info">Phone:</span> <span class="chat-msg">(917) 966-0779</span></div>
+                                <div class="chat-row"> <span class="chat-handle text-warning">Discord:</span> <span class="chat-msg">DatMoonGamer</span></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 mb-5 mx-auto">
-                    <div id="skills" class="content_box">
-                        <h1>Skills</h1>
-                        <div class="row text-start mt-4">
-                            <div class="col-md-6">
-                                <h3>Languages</h3>
-                                <ul>
-                                    <li>Java, Python, C, C++ </li>
-                                    <li>HTML5, CSS3, JavaScript </li>
-                                    <li>PHP, SQL </li>
-                                    <li>Mandarin Chinese (Spoken/Written)</li>
+
+                    <div class="col-12 col-xl-4">
+                        <div id="skills" class="eve-window-pane">
+                            <div class="pane-header">
+                                <span class="pane-title">// SKILLS</span>
+                            </div>
+                            <div class="pane-body text-start">
+                                <h3 class="skill-category-title font-monospace text-info">Languages</h3>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Programming: Java, Python, C, C++</span>
+                                        <span class="skill-level-indicator">Level V</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Frontend: HTML5/CSS3/JS</span>
+                                        <span class="skill-level-indicator">Level V</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Backend: PHP/SQL</span>
+                                        <span class="skill-level-indicator">Level IV</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item mb-4">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Spoken & Written: English, Mandarin Chinese</span>
+                                        <span class="skill-level-indicator">Level V</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-100"></div>
+                                    </div>
+                                </div>
+
+                                <h3 class="skill-category-title font-monospace text-info">Software</h3>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">GitHub</span>
+                                        <span class="skill-level-indicator">Level V</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Google Suite, Microsoft Office</span>
+                                        <span class="skill-level-indicator">Level V</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">FireAlpaca</span>
+                                        <span class="skill-level-indicator">Level V</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Linux (Ubuntu)</span>
+                                        <span class="skill-level-indicator">Level IV</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Adobe Premiere</span>
+                                        <span class="skill-level-indicator">Level IV</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-row-item mb-4">
+                                    <div class="skill-meta-desc">
+                                        <span class="skill-name">Microsoft Azure</span>
+                                        <span class="skill-level-indicator">Level III</span>
+                                    </div>
+                                    <div class="skill-progress-bar-wrapper">
+                                        <div class="skill-progress-fill width-60"></div>
+                                    </div>
+                                </div>
+
+                                <h3 class="skill-category-title font-monospace text-warning">Certificates</h3>
+                                <ul class="eve-bullet-list font-monospace text-muted-blue">
+                                    <li>CS50AI (Harvard): Artificial Intelligence Processing Module</li>
+                                    <li>Google Cybersecurity Professional Certificate V2 Matrix</li>
+                                    <li><a href="https://coursera.org/share/b7928b66c07cb97b8f06ef344b7a4327" class="eve-inline-link">Fundamentals of Quantitative Modeling (UPenn)</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <h3>Software & Tools</h3>
-                                <ul>
-                                    <li>GitHub & Linux (Ubuntu) </li>
-                                    <li>Microsoft Azure & Office </li>
-                                    <li>Adobe Premiere</li>
-                                    <li>FireAlpaca </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-4 certs">
-                            <h3>Certifications</h3>
-                            <div class="badge">
-                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="32c03c6c-c725-4be9-9631-924e48bfaba2" data-share-badge-host="https://www.credly.com"></div>
-                                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a09bfe9a-9bbd-4a0e-9247-86f7821c6837" data-share-badge-host="https://www.credly.com"></div>
-                                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                            </div>
-                            <ul>
-                                <li>CS50AI (Harvard): Introduction to Artificial Intelligence with Python</li>
-                                <li>Google Cybersecurity Professional Certificate V2</li>
-                                <li><a href="https://coursera.org/share/b7928b66c07cb97b8f06ef344b7a4327">Fundamentals of Quantitative Modeling (UPenn)</a></li>
-                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 mb-5 mx-auto">
-                    <div id="experience" class="content_box">
-                        <h1>Experience</h1>
-                        <div class="mb-4">
-                            <img src="resources/img/rotc.png" alt="rotc" class="exp-img" />
-                            <div class="d-flex justify-content-between">
-                                <strong>Air Force Reserve Officer Training Corps</strong>
-                                <span>Sep 2024 - Nov 2025</span>
+
+                    <div class="col-12 col-xl-4">
+                        <div id="education" class="eve-window-pane">
+                            <div class="pane-header">
+                                <span class="pane-title">// EDUCATION</span>
                             </div>
-                            <em>Cadet 3rd Class, Public Affairs & Recruiting Officer</em>
-                            <ul>
-                                <li>Managed detachment outreach, recruiting, and social media</li>
-                                <li>Volunteered at recruiting and community service events</li>
-                                <li>Leadership/management training</li>
-                            </ul>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <strong>Arnold Air Society</strong>
-                                <span>Oct 2024 - Nov 2025</span>
+                            <div class="pane-body text-start font-monospace">
+
+                                <div class="mission-log-entry mb-4">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">RENSSELAER POLYTECHNIC INSTITUTE</span>
+                                        <span class="mission-date">2024.09 - Current</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">CSCI/ITWS Undergraduate - Junior</div>
+                                    <ul class="eve-bullet-list">
+                                        <li><b>CSCI:</b> Data Structures, Foundations of CS, Computer Architecture & Operating Systems, Introduction to Algorithms, Principles of Software</li>
+                                        <li><b>ITWS:</b> Introduction to ITWS, Web Systems Development, Web Science Systems Development, Human Computer Interactions</li>
+                                        <li><b>MATH:</b> Multivariable Calculus & Linear Algebra, Mathematical Foundations of Machine Learning</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mission-log-entry mb-4">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">STUYVESANT HIGH SCHOOL</span>
+                                        <span class="mission-date">2020.09 - 2024.06</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">Student</div>
+                                    <ul class="eve-bullet-list">
+                                        <li>AP Computer Science A, Systems Programming, Cybersecurity, AP Calculus BC</li>
+                                    </ul>
+                                </div>
+
                             </div>
-                            <em>Project Lead</em>
-                            <ul>
-                                <li>Race manager for 5k charity run for veteran suicide awareness</li>
-                                <li>Led and organized two gaming tournaments for fundraising</li>
-                                <li>Representative for coordinating with other organizations</li>
-                            </ul>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <strong>Garcia Program at Stony Brook University</strong>
-                                <span>Jul 2022 - Aug 2022</span>
-                            </div>
-                            <em>Assistant Researcher</em>
-                            <ul>
-                                <li>Exposed keratinocytes and fibroblasts to TiO2</li>
-                                <li>Analyzed observational notes for cancer research</li>
-                                <li>Presented findings in the end-of-year symposium</li>
-                            </ul>
                         </div>
                     </div>
+
+                    <div class="col-12 col-xl-4">
+                        <div id="experience" class="eve-window-pane">
+                            <div class="pane-header">
+                                <span class="pane-title">// EXPERIENCE</span>
+                            </div>
+                            <div class="pane-body text-start font-monospace">
+
+                                <div class="mission-log-entry mb-4">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">RPI AMBULANCE</span>
+                                        <span class="mission-date">2026.01 - Current</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">Ambulance Attendant/EMT</div>
+                                    <ul class="eve-bullet-list">
+                                        <li>Responded to 10+ 911 calls</li>
+                                        <li>Posted on standby at 10+ RPI events</li>
+                                        <li>Remained on duty for 200+ volunteer hours</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mission-log-entry mb-4">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">RICHMOND COUNTY AMBULANCE</span>
+                                        <span class="mission-date">2026.07 - 2026.07</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">EMT student</div>
+                                    <ul class="eve-bullet-list">
+                                        <li>Responded to 10 Interfacility Transport calls</li>
+                                        <li>Filled out 10 Patient Care Reports</li>
+                                        <li>Observed ambulance operations for 24 hours total</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mission-log-entry mb-4">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">ARKSCAN</span>
+                                        <span class="mission-date">2026.05 - 2026.06</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">Printer Technician</div>
+                                    <ul class="eve-bullet-list">
+                                        <li>Cleaned and repaired 100+ printers</li>
+                                        <li>Organized and tracked inventory</li>
+                                        <li>Provided consultation to company operations</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mission-log-entry mb-4">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">AIR FORCE RESERVE OFFICER TRAINING CORPS</span>
+                                        <span class="mission-date">2024.09 - 2025.11</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">Cadet 3rd Class // Public Affairs & Recruiting Officer, MWR Officer</div>
+                                    <ul class="eve-bullet-list">
+                                        <li>Spearheaded recruiting by conducting outreach, interviewing, and tabling</li>
+                                        <li>Created 10+ social media posts uplifting cadets and reporting on detachment news</li>
+                                        <li>Cultivated unit cohesion by organizing Morale, Welfare, and Recreation events</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mission-log-entry mb-4">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">ARNOLD AIR SOCIETY</span>
+                                        <span class="mission-date">2024.10 - 2025.11</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">Project Lead</div>
+                                    <ul class="eve-bullet-list">
+                                        <li>Directed a 5k charity run to raise awareness and funding for veteran suicide prevention</li>
+                                        <li>Executed two gaming tournaments for detachment fundraising</li>
+                                        <li>Representative for coordinating with other organizations</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mission-log-entry">
+                                    <div class="d-flex justify-content-between align-items-center boundary-title">
+                                        <span class="mission-title text-success">GARCIA PROGRAM AT STONY BROOK UNIVERSITY</span>
+                                        <span class="mission-date">2022.07 - 2022.08</span>
+                                    </div>
+                                    <div class="mission-rank text-info mb-2">Assistant Researcher</div>
+                                    <ul class="eve-bullet-list">
+                                        <li>Exposed keratinocytes and fibroblasts to TiO2</li>
+                                        <li>Analyzed observational notes for cancer research</li>
+                                        <li>Presented findings in the end-of-year symposium</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4">
+                        <div id="education" class="eve-window-pane">
+                            <div class="pane-header">
+                                <span class="pane-title">// PROJECTS</span>
+                            </div>
+                            <div class="pane-body text-start">
+                                <h3 class="skill-category-title font-monospace text-info"><b>Click the PRJ button on the left sidebar to view my projects!</b></h3>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </div>
+
     <script src="bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
-    </div>
-    <!--------------->
+    <script>
+        function updateEveClock() {
+            const clockEl = document.querySelector('.clock-display');
+            if (!clockEl) return;
+            const now = new Date();
+            const formatter = new Intl.DateTimeFormat('en-US', {
+                timeZone: 'America/New_York',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false
+            });
+            clockEl.innerText = formatter.format(now);
+        }
 
-    <div id="footer">
-        <p>Contact</p>
-        <p>Phone: (917) 966-0779</p>
-        <p>Email: riverripplestudios@gmail.com</p>
-    </div>
+        updateEveClock();
+
+        setInterval(updateEveClock, 1000);
+    </script>
 </body>
 
 </html>
